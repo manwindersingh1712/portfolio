@@ -29,7 +29,7 @@ const LetsWorkTogether = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex flex-col mt-10 space-y-6"
+          className="flex flex-col mt-10 space-y-6 w-[95%] sm:w-full mx-auto sm:mx-0"
         >
           {/* Name & Email Fields */}
           <div className="flex flex-col sm:flex-row gap-4">
