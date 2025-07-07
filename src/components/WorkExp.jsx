@@ -37,11 +37,11 @@ const workHistory = [
 
 const WorkExp = ({ isHead = false }) => {
   return (
-    <div id="experience" className={isHead ? "mb-15" : "pt-20 mb-15"}>
-      <div className="text-white font-bold text-[94px]  leading-[94px]">
+    <div id="experience" className={isHead ? "mb-15" : "pt-0 sm:pt-20 mb-15"}>
+      <div className="text-white font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-center sm:text-left">
         3 YEARS OF
       </div>
-      <div className="font-bold text-[94px]  leading-[94px] text-[#b6b4bd33]">
+      <div className="font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-[#b6b4bd33] text-center sm:text-left">
         EXPERIENCE
       </div>
 
@@ -56,22 +56,19 @@ const WorkExp = ({ isHead = false }) => {
           >
             <div className="flex items-center gap-5">
               <div>
-                <h3 className="text-[26px] leading-[25.2px] text-white font-semibold">
+                <h3 className="text-[16px] sm:text-[26px] leading-[20px] sm:leading-[25.2px] text-white font-semibold">
                   {title}
                 </h3>
-                <p className="text-[16px] leading-[25.2px] text-[#998f8f] mt-3">
+                <p className="text-[14px] sm:text-[16px] leading-[22px] sm:leading-[25.2px] text-[#998f8f] mt-2 sm:mt-3">
                   {subtitle}
                 </p>
-                <p className="text-[16px] leading-[25.2px] text-[#998f8f] mt-6">
+                <p className="text-[14px] sm:text-[16px] leading-[22px] sm:leading-[25.2px] text-[#998f8f] mt-4 sm:mt-6">
                   {from} - {to}
                 </p>
               </div>
             </div>
-            <span
-              className="relative top-4 right-2 transition-all duration-300 ease-in-out group-hover:-top-1 group-hover:-right-1"
-              style={{ color: "rgb(244, 108, 56)" }}
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square text-[15px]"></i>
+            <span className="hidden sm:inline relative top-4 right-2 transition-all duration-300 ease-in-out group-hover:-top-1 group-hover:-right-1 text-[#f46c38]">
+              <i className="fa-solid fa-arrow-up-right-from-square text-[15px]"></i>
             </span>
           </a>
         ))}
