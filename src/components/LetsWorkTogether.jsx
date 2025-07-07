@@ -16,13 +16,13 @@ const LetsWorkTogether = () => {
 
   return (
     <>
-      <div id="contact" className="pt-20 mb-30">
+      <div id="contact" className="pt-0 sm:pt-20 mb-30">
         <ToastContainer position="top-center" autoClose={3000} />
 
-        <div className="text-white font-bold text-[64px] sm:text-[94px] leading-[1]">
+        <div className="text-white font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-center sm:text-left">
           LET'S WORK
         </div>
-        <div className="font-bold text-[64px] sm:text-[94px] leading-[1] text-[#b6b4bd33]">
+        <div className="font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-[#b6b4bd33] text-center sm:text-left">
           TOGETHER
         </div>
 
@@ -67,7 +67,6 @@ const LetsWorkTogether = () => {
             </div>
           </div>
 
-          {/* Regarding */}
           <div>
             <label className="text-sm text-white block mb-1">Regarding</label>
             <select
@@ -114,7 +113,7 @@ const LetsWorkTogether = () => {
         </form>
       </div>
       <div className="pb-10">
-        <p className="text-[16px] leading-[25.2px] text-[#998f8f] mt-3">
+        <p className="text-[16px] leading-[25.2px] text-[#998f8f] mt-3 text-center sm:text-left">
           Built by{" "}
           <span style={{ color: "rgb(244, 108, 56)" }}>Manwinder </span>
           with ❤️ in 2025{" "}

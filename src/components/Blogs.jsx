@@ -27,13 +27,13 @@ const blogs = [
   },
 ];
 
-const Blogs = ({isHead = false}) => {
+const Blogs = ({ isHead = false }) => {
   return (
-    <div id="blogs" className={ isHead ? "pt-0 mb-20" : "pt-20 mb-20"}>
-      <div className="text-white font-bold text-[94px]  leading-[94px]">
+    <div id="skills" className={isHead ? "pt-0 mb-20" : "pt-0 sm:pt-20 mb-20"}>
+      <div className="text-white font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-center sm:text-left">
         Shipping
       </div>
-      <div className="font-bold text-[94px]  leading-[94px] text-[#b6b4bd33]">
+      <div className="font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-[#b6b4bd33] text-center sm:text-left">
         Thoughts
       </div>
       <div className="flex flex-col mt-10">
@@ -60,7 +60,7 @@ const Blogs = ({isHead = false}) => {
               </div>
             </div>
             <span
-              className="relative top-4 right-2 transition-all duration-300 ease-in-out group-hover:-top-1 group-hover:-right-1"
+              className="hidden sm:inline relative top-4 right-2 transition-all duration-300 ease-in-out group-hover:-top-1 group-hover:-right-1"
               style={{ color: "rgb(244, 108, 56)" }}
             >
               <i class="fa-solid fa-arrow-up-right-from-square text-[15px]"></i>
