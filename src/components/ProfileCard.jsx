@@ -4,8 +4,8 @@ import myImage from "../../public/manwinder2.png";
 const ProfileCard = () => {
   return (
     <div className="flex justify-center items-center max-h-max sticky top-[140px]">
-      <div className="w-full max-w-sm bg-white border border-gray-200 rounded-3xl shadow-xl px-6 py-5 text-center min-w-[344px] min-h-[640px]">
-        <div className="w-[240px] h-[284px] mx-auto mb-6 rounded-xl overflow-hidden shadow-md">
+      <div className="w-full max-w-sm bg-white border border-gray-200 rounded-3xl shadow-xl px-4 py-4 text-center min-w-[344px] h-[456px] md:min-h-[640px] md:px-6 md:py-5">
+        <div className="w-[240px] h-[210px] md:h-[284px] mx-auto mb-4 md:mb-6 rounded-xl overflow-hidden shadow-md">
           <img
             src={myImage}
             alt="Manwinder Singh"
@@ -14,15 +14,15 @@ const ProfileCard = () => {
           />
         </div>
 
-        <h2 className="text-[30px] font-bold leading-[39.6px] text-black mt-6">
+        <h2 className="text-[24px] md:text-[30px] font-bold leading-[32px] md:leading-[39.6px] text-black mt-4 md:mt-6">
           Manwinder Singh
         </h2>
 
-        <p className="text-[17px] leading-[25px] font-medium text-gray-600 mt-24">
+        <p className="text-[15px] md:text-[17px] leading-[22px] md:leading-[25px] font-medium text-gray-600 mt-6 md:mt-24">
           A Software Engineer who has developed countless innovative solutions.
         </p>
 
-        <div className="flex justify-center gap-6 mt-8">
+        <div className="flex justify-center gap-6 mt-6 md:mt-8">
           <SocialIcon
             href="https://www.linkedin.com/in/manwinder-singh-615057185/"
             icon="linkedin"
@@ -64,7 +64,7 @@ const SocialIcon = ({ href, icon, color, label }) => (
   >
     <i
       className={
-        icon === "envelope" || icon == "file"
+        icon === "envelope" || icon === "file"
           ? `fa-solid fa-${icon} text-2xl`
           : `fab fa-${icon} text-2xl`
       }
