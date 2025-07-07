@@ -2,20 +2,22 @@ import React from "react";
 
 const skillCards = [
   {
-    title: "DYNAMIC ANIMATION,\nMOTION DESIGN",
+    title: "SCALING SYSTEMS\nManaging Millions",
     icon: "/skills/orange-layer.png",
     bgColor: "bg-[#f46c38]",
     pattern: "bg-[url('/skills/orange-layer.png')]",
     textColor: "text-white",
-    arrowHoverColor: "text-[#f46c38]",
+    arrowHoverColor: "group-hover:text-[#f46c38]",
+    link: "https://medium.com/@manwinder-sng/scaling-gracefully-handle-millions-of-records-using-message-queues-5683d06d8adc",
   },
   {
-    title: "FRAMER, FIGMA,\nWORDPRESS, REACTJS",
+    title: "WEB-BASED PORTFOLIO \nOPERATING SYSTEM (2020)",
     icon: "/skills/green-layer.png",
     bgColor: "bg-[#c8ff4d]",
     pattern: "bg-[url('/skills/green-layer.png')]",
     textColor: "text-black",
-    arrowHoverColor: "text-black",
+    arrowHoverColor: "group-hover:text-black",
+    link: "https://manwindersingh1712.github.io/portfolio.os/",
   },
 ];
 
@@ -27,30 +29,40 @@ const SkillCards = () => {
           key={idx}
           className={`relative w-full sm:w-[280px] h-[200px] p-4 sm:p-5 rounded-xl overflow-hidden ${card.bgColor} ${card.pattern} bg-no-repeat bg-cover shadow-md text-center sm:text-left`}
         >
-          <img src={card.icon} alt="icon" className="w-6 h-6 mb-3 sm:mb-4 mx-auto sm:mx-0" />
-
+          <span className={`text-3xl ${card.textColor}`}>
+            <i className="fa-solid fa-layer-group"></i>
+          </span>
           <h3
-            className={`whitespace-pre-line font-bold text-base sm:text-lg ${card.textColor}`}
+            className={`whitespace-pre-line font-bold text-base pt-8 sm:text-lg ${card.textColor}`}
           >
             {card.title}
           </h3>
 
           <div className="absolute bottom-4 right-4">
-            <button
-              className={`
-                group w-8 h-8 flex items-center justify-center border-2 rounded-md
-                border-current transition-all duration-200 cursor-pointer
-                hover:bg-white
-                ${card.textColor}
-            `}
+            <a
+              href={card.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex={-1}
+              className="group"
             >
-              <i
+              <button
                 className={`
-                  fa-solid fa-arrow-right transition-all duration-200
-                  group-hover:${card.arrowHoverColor}
+                  w-8 h-8 flex items-center justify-center border-2 rounded-md
+                  border-current transition-all duration-200 cursor-pointer
+                  hover:bg-white
+                  ${card.textColor}
                 `}
-              ></i>
-            </button>
+                aria-label="Learn more"
+              >
+                <i
+                  className={`
+                    fa-solid fa-arrow-right transition-all duration-200
+                    ${card.arrowHoverColor}
+                  `}
+                ></i>
+              </button>
+            </a>
           </div>
         </div>
       ))}
