@@ -27,6 +27,11 @@ const tools = [
     icon: "/tech_logos/nodejs.png",
   },
   {
+    name: "Ansible",
+    desc: "Infrastructure Automation",
+    icon: "/tech_logos/ansible.png",
+  },
+  {
     name: "RabbitMQ",
     desc: "Message Queue",
     icon: "/tech_logos/rabbitmq.png",
@@ -51,11 +56,11 @@ const tools = [
     desc: "Profiling, Search & Logs",
     icon: "/tech_logos/elastic.png",
   },
-  // {
-  //   name: "Redis",
-  //   desc: "Caching / Queues",
-  //   icon: "/tech_logos/redis.png",
-  // },
+  {
+    name: "Redis",
+    desc: "Caching / Queues",
+    icon: "/tech_logos/redis.png",
+  },
 ];
 
 const TechArsenal = ({ isHead = false }) => {
