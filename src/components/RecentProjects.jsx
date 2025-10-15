@@ -2,6 +2,12 @@ import React from "react";
 
 const projects = [
   {
+    title: "Flipkart Infinite Feed",
+    subtitle: "Get user relevent infinite feed.",
+    image: "https://www.freelogovectors.net/wp-content/uploads/2025/07/flipkart-logo-icon-freelogovectors.net_.png",
+    link: "https://www.flipkart.com/",
+  },
+  {
     title: "RE Pro",
     subtitle: "Instantly estimate your short-term rental revenue",
     image: "/repro.png",

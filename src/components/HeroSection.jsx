@@ -21,6 +21,7 @@ const HeroSection = () => {
         id="home"
         className="text-white font-bold text-[60px] sm:text-[94px] leading-[60px] sm:leading-[94px]"
       >
+        SENIOR
         SOFTWARE
       </div>
       <div className="font-bold text-[60px] sm:text-[94px] leading-[60px] sm:leading-[94px] text-[#b6b4bd33]">

@@ -2,12 +2,20 @@ import React from "react";
 
 const workHistory = [
   {
+    title: "Flipkart",
+    subtitle:
+      "Built scalable systems that scales and millions of users touch daily. Developed the recommendation system for the newly added products throughout the product.",
+    link: "https://www.flipkart.com/",
+    from: "SEPT 2025",
+    to: "Present",
+  },
+  {
     title: "PriceLabs",
     subtitle:
       "Built scalable systems processing 200K+ daily data points. Developed Revenue Estimator Pro and system profiling tools to optimize API performance. Architected experimentation infrastructure for the growth team to help reduce churn.",
     link: "https://hello.pricelabs.co/",
     from: "AUG 2022",
-    to: "Present",
+    to: "AUG 2025",
   },
   {
     title: "UviHealth",
@@ -39,7 +47,7 @@ const WorkExp = ({ isHead = false }) => {
   return (
     <div id="experience" className={isHead ? "mb-15" : "pt-0 sm:pt-20 mb-15"}>
       <div className="text-white font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-center sm:text-left">
-        3 YEARS OF
+        4 YEARS OF
       </div>
       <div className="font-bold text-[48px] sm:text-[94px] leading-[48px] sm:leading-[94px] text-[#b6b4bd33] text-center sm:text-left">
         EXPERIENCE
