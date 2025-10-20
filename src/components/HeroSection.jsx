@@ -34,7 +34,7 @@ const HeroSection = () => {
         scalable.
       </p>
       <div className="mt-12 sm:mt-20 flex items-center justify-center sm:justify-start gap-8 sm:gap-12">
-        <StatBlock value="+3" label1="YEARS OF" label2="EXPERIENCE" />
+        <StatBlock value="+4" label1="YEARS OF" label2="EXPERIENCE" />
         <StatBlock value="+26" label1="PROJECTS" label2="COMPLETED" />
         <StatBlock value="+8" label1="AWARDS" label2="RECEIVED" />
       </div>

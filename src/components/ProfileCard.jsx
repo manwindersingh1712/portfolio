@@ -36,7 +36,7 @@ const ProfileCard = () => {
             label="Github"
           />
           <SocialIcon
-            href="https://drive.google.com/file/d/1JelSMNJ170nlj6ej9CC0i_-dnlAkBFrM/view?usp=sharing"
+            href="https://drive.google.com/file/d/1a3kOF619X4XbDKHkOufxgb7s7eaZAxGW/view?usp=sharing"
             icon="file"
             color="rgb(244, 108, 56)"
             label="Resume"
