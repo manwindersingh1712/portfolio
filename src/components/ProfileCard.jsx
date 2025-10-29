@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../../public/manwinder2.png";
+import myImage from "../../public/manwinder3.png";
 
 const ProfileCard = () => {
   return (
